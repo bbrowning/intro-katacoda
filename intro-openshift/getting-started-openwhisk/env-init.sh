@@ -1,10 +1,3 @@
-ssh root@host01 <<EOF
-echo 'echo "Waiting for OpenWhisk to start... This may take a couple of moments"' >> ~/.openwhisk_launch.sh
-echo 'until $(oc logs controller-0 | grep "invoker status changed to 0 -> Healthy"); do' >> ~/.openwhisk_launch.sh
-echo '  sleep 1' >> ~/.openwhisk_launch.sh
-echo 'done' >> ~/.openwhisk_launch.sh"
-chmod +x ~/.openwhisk_launch.sh
-EOF
 ssh root@host01 "docker pull centos/python-35-centos7:latest"
 ssh root@host01 "docker pull openshiftroadshow/parksmap-katacoda:1.0.0"
 ssh root@host01 'for i in {1..200}; do oc policy add-role-to-user system:image-puller system:anonymous && break || sleep 1; done'
