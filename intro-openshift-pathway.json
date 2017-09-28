@@ -44,7 +44,7 @@
     },
     {
       "course_id": "getting-started-openwhisk",
-      "title": "Apache OpenWhisk on OpenShift"
+      "title": "Apache OpenWhisk on OpenShift",
       "description": "Introduction to Apache OpenWhisk on OpenShift"
     }
   ]
