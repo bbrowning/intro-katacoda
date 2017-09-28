@@ -44,9 +44,9 @@
       "title": "OpenShift for Fuse Developers"
     },
     {
-      "external_link": "https://learn.openshift.com/introduction/fis-deploy-app/",
       "course_id": "getting-started-openwhisk",
-      "title": "OpenWhisk on OpenShift"
+      "title": "Apache OpenWhisk on OpenShift"
+      "description": "Introduction to Apache OpenWhisk on OpenShift"
     }
   ]
 }
